@@ -1,0 +1,76 @@
+{% extends "my_resume/base.html" %}
+{% load static %}
+{% block body%}
+
+<body>
+    <div class="container-fluid">
+        <div class='jumbotron' style="text-align:center; ">
+            <h1>Kingsley Godwin</h1>
+            <h3>Fullstack Web Developer</h3>
+        </div>
+        
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class='col-sm-8' style="">
+                        <nav class="navbar navbar-inverse">
+                        <div class="container-fluid"> 
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#" class="about">About</a></li>
+                                <li><a href="#" class="experience">Experience</a></li>
+                                <li><a href="#" class="education">Education</a></li>
+                                <li><a href="#" class="skill">Skills</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="container-fluid" id="text-area">
+            
+                        
+                    </div>
+                </div>
+                    <div class='col-sm-4 ' style="">
+                        <span>
+                            <a href="https://linkedin.com/in/ninety5" class="fa fa-linkedin"></a>
+                        </span>
+                        <span>
+                            <a href="https://twitter.com/ninety___5" class="fa fa-twitter"></a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/realninety5" class="fa fa-github"></a>
+                        </span>
+                        <span>
+                            <a href="mailto:kogc95@gmail.com" class="fa fa-google"></a>
+                        </span>
+                        <form action="contact" class='btnn' method='post'>
+                            <div class="form-group ">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Subject:</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject">
+                            </div>
+                                <div class="form-group">
+                                <label for="pwd">Body:</label>
+                                <textarea class="form-control" id="body" rows="6" cols="60" name="body" placeholder="Enter subject"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </form>
+                        <p class="sent"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 
+            <a href="https://training.zuri.team/"> <img style="height: 40px;" src="https://hng.tech/img/brand-logo.png" alt="" /></a>
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </div>
+{% endblock %}
